@@ -47,6 +47,7 @@ class Subcribe():
         self.c.bind(inform_error=self.on_inform_error)
         self.met_labels = None
         self.start_time = None
+        self.latest_met = {}
 
     def start(self, streams, headset_id=''):
         """
@@ -201,6 +202,16 @@ class Subcribe():
         values = dict(zip(self.met_labels, data['met']))
         elapsed = time.time() - self.start_time
         attn = values.get('attention', values.get('foc'))
+
+        self.latest_met = {
+            'eng': values['eng'],
+            'exc': values['exc'],
+            'lex': values['lex'],
+            'str': values['str'],
+            'rel': values['rel'],
+            'int': values['int'],
+            'attn': attn,
+        }
 
         print('t={:.1f}s eng={:.2f}, exc={:.2f}, lex={:.2f}, str={:.2f}, rel={:.2f}, int={:.2f}, attn={:.2f}'.format(
             elapsed, values['eng'], values['exc'], values['lex'], values['str'], values['rel'], values['int'], attn

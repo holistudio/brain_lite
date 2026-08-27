@@ -1,4 +1,5 @@
 import os
+import time
 
 from dotenv import load_dotenv
 
@@ -16,6 +17,12 @@ def main():
 
     streams = ['met']
     s.start(streams, headset_id=headset_id)
+
+    while True:
+        metrics = s.latest_met
+        # metrics is a dict like:
+        # {'eng': 0.50, 'exc': 0.27, 'lex': 0.25, 'str': 0.29, 'rel': 0.23, 'int': 0.31, 'attn': 0.58}
+        time.sleep(0.5)
 
 
 if __name__ == '__main__':
