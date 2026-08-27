@@ -7,15 +7,15 @@ stream eeg metrics from Emotiv Insight to terminal
 The "met" Stream Labels of Emotiv Insight headset
 
 
-| Label | Type | Description |
-|:---|:---|:---|
-| eng | number | Engagement measures immersion in an activity. |
-| exc | number | Excitement measures the intensity of reactions to stimuli or environments. |
-| lex | number | Long term excitement. It is calculated from the excitement values of the last minute. |
-| str | number | Stress measures emotional tension experienced when completing a task. |
-| rel | number | Relaxation measures calm focus after a period of intense concentration. |
-| int | number | Interest measures attraction or aversion to stimuli. |
-| attention | number | Attention measures sustained focus on a single task. |
+| Psychology Term | Label | Type | Description |
+|:---|:---|:---|:---|
+| Boredom (inverse) | eng | number | Engagement measures immersion in an activity. |
+| Arousal | exc | number | Excitement measures the intensity of reactions to stimuli or environments. |
+| Arousal (sustained) | lex | number | Long term excitement. It is calculated from the excitement values of the last minute. |
+| Frustration | str | number | Stress measures emotional tension experienced when completing a task. |
+| Meditation | rel | number | Relaxation measures calm focus after a period of intense concentration. |
+| Valence | int | number | Interest measures attraction or aversion to stimuli. |
+| Focus | attention | number | Attention measures sustained focus on a single task. |
 
 
 Example output
