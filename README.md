@@ -1,10 +1,10 @@
 # brain_lite
 
-stream eeg metrics to terminal
+stream eeg metrics from Emotiv Insight to terminal
 
 ## Emotions
 
-The "met" Stream Labels of EPOC / INSIGHT / FLEX - (with EPOC config only)
+The "met" Stream Labels of Emotiv Insight headset
 
 
 | Label | Type | Description |
