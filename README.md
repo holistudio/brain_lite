@@ -17,6 +17,19 @@ The "met" Stream Labels of Emotiv Insight headset
 | Valence | int | number | Interest measures attraction or aversion to stimuli. |
 | Focus | attention | number | Attention measures sustained focus on a single task. |
 
+## Usage
+
+After setting up virtual environment, install requirements
+
+```
+(uv) pip install -r requirements.txt
+```
+
+Run
+
+```
+python stream.py
+```
 
 Example output
 
